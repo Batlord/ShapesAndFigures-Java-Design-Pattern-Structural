@@ -1,6 +1,6 @@
 package fr.iutvalence.info.dut.m3105.preamble;
 
-public class Circle implements Shape{
+public class Circle extends Shape{
 
 	public int radius;
 
@@ -10,9 +10,9 @@ public class Circle implements Shape{
 	}
 
 	@Override
-	public void draw(Position p) {
+	public String toString() {
 		
-		System.out.println("Cercle en " + p + " de rayon " + this.radius);
+		return "Cercle de rayon " + this.radius;
 		
 	}
 	

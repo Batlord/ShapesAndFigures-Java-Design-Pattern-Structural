@@ -1,6 +1,6 @@
 package fr.iutvalence.info.dut.m3105.preamble;
 
-public class Rectangle implements Shape{
+public class Rectangle extends Shape{
 
 	public int height;
 	public int width;
@@ -12,8 +12,8 @@ public class Rectangle implements Shape{
 	}
 
 	@Override
-	public void draw(Position p) {
-		System.out.println("Rectangle en " + p + "de hauteur " + this.height + " et largeur " + this.width);
+	public String toString() {
+		return "Rectangle de hauteur " + this.height + " et largeur " + this.width;
 		
 	}
 	

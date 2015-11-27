@@ -1,6 +1,8 @@
 package fr.iutvalence.info.dut.m3105.preamble;
 
-public interface Shape {
+public abstract class Shape {
 
-	public void draw(Position p);
+	public void draw(Position p) {
+		System.out.println(toString()+" / "+ p);
+	}
 }
