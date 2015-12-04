@@ -14,14 +14,13 @@ public class CircleBuilder {
 	}
 	
 	public CircleBuilder setThicker(int thickness, Shape shape){
-		this.thickness = thickness;
-		this.shape = shape;
+		current = new Border(thickness, current);
+		return this;
 	}
 	
 	public CircleBuilder setFill(int angle, int intensity, Shape shape){
-		this.angle = angle;
-		this.intensity = intensity;
-		this.shape = shape;
+		current = new Shadow(angle, intensity, current);
+		return this;
 	}
 	
 
